@@ -14,6 +14,10 @@ public class Main {
         // max
         System.out.println(array.max());
 
+        // equal
+        System.out.println(array.equal(0, 1));
+        System.out.println(array.equal(1, 2));
+
 //        TwoNumbers a = new TwoNumbers(12, 18);
 //        TwoNumbers b = new TwoNumbers(17, 17);
 //

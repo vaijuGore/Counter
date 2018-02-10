@@ -40,4 +40,8 @@ class ArrayOfNumbers {
 
         return max;
     }
+
+    boolean equal(int first, int second) {
+        return Integer.compare(arrayOfIntegers[first], arrayOfIntegers[second]) == 0;
+    }
 }
