@@ -60,4 +60,22 @@ class ArrayOfNumbers {
 
         return first;
     }
+
+    int count() {
+        return arrayOfIntegers.length;
+    }
+
+    int sum() {
+        int sum = 0;
+
+        for (int i = 0; i < arrayOfIntegers.length; i++) {
+            sum += arrayOfIntegers[i];
+        }
+
+        return sum;
+    }
+
+    int average() {
+        return sum() / count();
+    }
 }

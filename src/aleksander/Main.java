@@ -22,6 +22,15 @@ public class Main {
         array.setItem(1, 10);
         System.out.println(array.gcd(0, 1));
 
+        // count
+        System.out.println("Count: " + array.count());
+
+        // sum
+        System.out.println("Sum: " + array.sum());
+
+        // average
+        System.out.println("Average: " + array.average());
+
 //        TwoNumbers a = new TwoNumbers(12, 18);
 //        TwoNumbers b = new TwoNumbers(17, 17);
 //
