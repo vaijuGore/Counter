@@ -6,6 +6,10 @@ public class Main {
         ArrayOfNumbers array = new ArrayOfNumbers(10);
         System.out.println(array.getItem(0));
 
+
+        array.setItem(0, 5);
+        System.out.println(array.getItem(0));
+
 //        TwoNumbers a = new TwoNumbers(12, 18);
 //        TwoNumbers b = new TwoNumbers(17, 17);
 //

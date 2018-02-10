@@ -24,4 +24,8 @@ public class ArrayOfNumbers {
     int getItem(int index) {
         return arrayOfIntegers[index];
     }
+
+    void setItem(int index, int value) {
+        arrayOfIntegers[index] = value;
+    }
 }
