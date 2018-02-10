@@ -90,4 +90,15 @@ class ArrayOfNumbers {
             arrayOfIntegers[i] += constant;
         }
     }
+
+    void addObject(ArrayOfNumbers object) {
+        // if the arrays aren't equal exit the method
+        if (arrayOfIntegers.length != object.count()) {
+            return;
+        }
+
+        for (int i = 0; i < arrayOfIntegers.length; i++) {
+            arrayOfIntegers[i] += object.getItem(i);
+        }
+    }
 }

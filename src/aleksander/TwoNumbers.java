@@ -7,28 +7,28 @@ public class TwoNumbers {
     private int first;
     private int second;
 
-    public TwoNumbers(int first, int second) {
+    TwoNumbers(int first, int second) {
         this.first = first;
         this.second = second;
     }
 
-    public int getFirst() {
+    int getFirst() {
         return first;
     }
 
-    public int getSecond() {
+    int getSecond() {
         return second;
     }
 
-    public int max() {
+    int max() {
         return (Integer.compare(first, second) == 1) ? first : second;
     }
 
-    public boolean equal() {
+    boolean equal() {
         return Integer.compare(first, second) == 0;
     }
 
-    public int gcd(int first, int second) {
+    int gcd(int first, int second) {
         while (first != second) {
             int smallerNumber = (first < second) ? first : second;
             int largerNumber = (first > second) ? first : second;

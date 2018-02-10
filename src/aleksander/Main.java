@@ -39,6 +39,22 @@ public class Main {
         array.addConstant(10);
         System.out.println("Scalar Constant: " + array.getItem(0));
 
+        // addObject
+        int[] secondArray = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+        ArrayOfNumbers arrayTwo = new ArrayOfNumbers(secondArray);
+        array.addObject(arrayTwo);
+
+        System.out.println("Get Item: " + array.getItem(0));
+        System.out.println("Get Item: " + array.getItem(1));
+        System.out.println("Get Item: " + array.getItem(2));
+        System.out.println("Get Item: " + array.getItem(3));
+        System.out.println("Get Item: " + array.getItem(4));
+        System.out.println("Get Item: " + array.getItem(5));
+        System.out.println("Get Item: " + array.getItem(6));
+        System.out.println("Get Item: " + array.getItem(7));
+        System.out.println("Get Item: " + array.getItem(8));
+        System.out.println("Get Item: " + array.getItem(9));
+
 //        TwoNumbers a = new TwoNumbers(12, 18);
 //        TwoNumbers b = new TwoNumbers(17, 17);
 //
