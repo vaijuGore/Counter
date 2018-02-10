@@ -18,6 +18,10 @@ public class Main {
         System.out.println(array.equal(0, 1));
         System.out.println(array.equal(1, 2));
 
+        // gcd
+        array.setItem(1, 10);
+        System.out.println(array.gcd(0, 1));
+
 //        TwoNumbers a = new TwoNumbers(12, 18);
 //        TwoNumbers b = new TwoNumbers(17, 17);
 //

@@ -44,4 +44,20 @@ class ArrayOfNumbers {
     boolean equal(int first, int second) {
         return Integer.compare(arrayOfIntegers[first], arrayOfIntegers[second]) == 0;
     }
+
+    int gcd(int first, int second) {
+        first = arrayOfIntegers[first];
+        second = arrayOfIntegers[second];
+
+        while (first != second) {
+            int smallerNumber = (first < second) ? first : second;
+            int largerNumber = (first > second) ? first : second;
+            int difference = largerNumber - smallerNumber;
+
+            first = smallerNumber;
+            second = difference;
+        }
+
+        return first;
+    }
 }
