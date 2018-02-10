@@ -75,7 +75,19 @@ class ArrayOfNumbers {
         return sum;
     }
 
-    int average() {
-        return sum() / count();
+    double average() {
+        return (double) sum() / count();
+    }
+
+    void scalarMultiply(int multiplier) {
+        for (int i = 0; i < arrayOfIntegers.length; i++) {
+            arrayOfIntegers[i] *= multiplier;
+        }
+    }
+
+    void addConstant(int constant) {
+        for (int i = 0; i < arrayOfIntegers.length; i++) {
+            arrayOfIntegers[i] += constant;
+        }
     }
 }
