@@ -3,14 +3,14 @@ package aleksander;
 /**
  * Created by AC15 on 10/02/2018
  */
-public class ArrayOfNumbers {
+class ArrayOfNumbers {
     private int arrayOfIntegers[];
 
-    public ArrayOfNumbers(int arraySize) {
+    ArrayOfNumbers(int arraySize) {
         this.arrayOfIntegers = new int[arraySize];
     }
 
-    public ArrayOfNumbers(int[] arrayOfIntegers) {
+    ArrayOfNumbers(int[] arrayOfIntegers) {
 //        int arraySize = arrayOfIntegers.length;
 //        this.arrayOfIntegers = new int[arraySize];
 //
@@ -27,5 +27,17 @@ public class ArrayOfNumbers {
 
     void setItem(int index, int value) {
         arrayOfIntegers[index] = value;
+    }
+
+    int max() {
+        int max = arrayOfIntegers[0];
+
+        for (int i = 1; i < arrayOfIntegers.length; i++) {
+            if (arrayOfIntegers[i] > max) {
+                max = arrayOfIntegers[i];
+            }
+        }
+
+        return max;
     }
 }

@@ -3,12 +3,16 @@ package aleksander;
 public class Main {
 
     public static void main(String[] args) {
+        // getItem
         ArrayOfNumbers array = new ArrayOfNumbers(10);
         System.out.println(array.getItem(0));
 
-
+        // setItem
         array.setItem(0, 5);
         System.out.println(array.getItem(0));
+
+        // max
+        System.out.println(array.max());
 
 //        TwoNumbers a = new TwoNumbers(12, 18);
 //        TwoNumbers b = new TwoNumbers(17, 17);
